@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Professionnel | Salih Hrouchane</title>
+  
+  <style>
+   
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #f4f4f4; color: #333; line-height: 1.6; }
+    .container { max-width: 900px; margin: 50px auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); }
+    
+    h1 { color: #f0c36d; margin-bottom: 5px; }
+    h2 { color: #333; margin-bottom: 15px; font-size: 1.3rem; }
+    h3.section-title { color: #f0c36d; margin-bottom: 15px; border-left: 5px solid #f0c36d; padding-left: 10px; }
+    p { margin-bottom: 10px; }
+
+    a { color: #f0c36d; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    
+    
+    .contact, .skills, .certifications, .experience, .education, .projects { margin-bottom: 25px; }
+    .contact div, .skills div, .certifications div { margin-bottom: 5px; }
+    
+    
+    .skills-list { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill { background: #f0c36d; color: #000; padding: 6px 12px; border-radius: 6px; font-weight: 500; font-size: 0.9rem; }
+    
+  
+    .timeline-item { margin-bottom: 15px; }
+    .timeline-item h4 { font-size: 1.1rem; color: #333; margin-bottom: 3px; }
+    .timeline-item span { font-size: 0.9rem; color: #777; }
+    .timeline-item p { font-size: 0.95rem; color: #555; }
+    
+   
+    @media(max-width:768px){
+      .skills-list { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Salih Hrouchane</h1>
+      <h2>Développeur Front-End | Étudiant à l’ENS Meknès</h2>
+      <p>Meknès, Maroc</p>
+    </header>
+
+    
+    <section class="contact">
+      <h3 class="section-title">Contact</h3>
+      <div>Email: <a href="mailto:Salihhrouchane2@gmail.com">Salihhrouchane2@gmail.com</a></div>
+      <div>Téléphone: +212 7 12 74 97 32</div>
+      <div>LinkedIn: <a href="#">linkedin.com/in/salihhrouchane</a></div>
+    </section>
+
+    
+    <section class="skills">
+      <h3 class="section-title">Compétences</h3>
+      <div class="skills-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">React</div>
+        <div class="skill">Figma</div>
+        <div class="skill">Illustrator</div>
+        <div class="skill">Adobe XD</div>
+        <div class="skill">Photoshop</div>
+        <div class="skill">Android Studio</div>
+      </div>
+    </section>
+
+    
+    <section class="summary">
+      <h3 class="section-title">Profil</h3>
+      <p>Étudiant à l’École Normale Supérieure de Meknès, passionné par le développement web et mobile. 
+      En tant que développeur front-end, je conçois des interfaces modernes et intuitives, en combinant 
+      la technique et le design pour créer des expériences utilisateurs fluides. J’ai également une solide 
+      expérience dans les outils de conception graphique.</p>
+    </section>
+
+   
+    <section class="projects">
+      <h3 class="section-title">Projets Réalisés</h3>
+      <div class="timeline-item">
+        <h4>Portfolio Personnel</h4>
+        <p>Création d’un site personnel responsive présentant mes compétences, projets et contact.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Site de Gestion de Stock</h4>
+        <p>Développement d’une application web simple pour gérer les produits, les catégories et les quantités.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Site de Réservation d’Hôtels</h4>
+        <p>Conception et développement d’un site moderne avec système de recherche et réservation.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Site E-commerce</h4>
+        <p>Création d’une boutique en ligne avec interface utilisateur moderne et panier d’achat dynamique.</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Site de Design</h4>
+        <p>Conception de maquettes web sur Figma et développement front-end pour présenter des créations graphiques.</p>
+      </div>
+    </section>
+
+    <section class="education">
+      <h3 class="section-title">Éducation</h3>
+      <div class="timeline-item">
+        <h4>École Normale Supérieure, Meknès</h4>
+        <span>2025 – Présent</span>
+        <p>Licence en Informatique</p>
+      </div>
+      <div class="timeline-item">
+        <h4>Lycée Al Khawarizmi</h4>
+        <span>2023</span>
+        <p>Baccalauréat en Sciences Physiques et Chimie</p>
+      </div>
+    </section>
+
+  </div>
+
+</body>
+</html>
