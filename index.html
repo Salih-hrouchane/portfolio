@@ -16,7 +16,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
   
   <style>
-   
     :root {
       --primary-color: #f0c36d;
       --primary-dark: #d4a959;
@@ -49,7 +48,6 @@
     html {
       scroll-behavior: smooth;
     }
-    
     
     .loader-wrapper {
       position: fixed;
@@ -116,7 +114,6 @@
       100% { transform: translateY(0); }
     }
     
-   
     header {
       background: rgba(10, 10, 10, 0.95);
       backdrop-filter: blur(10px);
@@ -181,7 +178,6 @@
       background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240, 195, 109, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     
-   
     #about {
       padding-top: 120px;
       padding-bottom: 100px;
@@ -291,7 +287,6 @@
       line-height: 1.8;
       margin-bottom: 30px;
     }
-    
     
     #services {
       padding: 100px 0;
@@ -423,7 +418,6 @@
       margin-bottom: 0;
     }
     
-    
     section {
       padding: 80px 0;
       position: relative;
@@ -437,7 +431,6 @@
       font-weight: 700;
     }
     
-  
     .project-card {
       background: var(--card-bg);
       border-radius: 16px;
@@ -477,7 +470,6 @@
       font-size: 0.95rem;
     }
     
-  
     .skill-card {
       background: var(--card-bg);
       padding: 30px;
@@ -503,7 +495,6 @@
       color: var(--text-secondary);
       margin-bottom: 0;
     }
-    
     
     #cv {
       text-align: center;
@@ -533,7 +524,6 @@
       color: #000;
     }
     
- 
     #contact {
       background: linear-gradient(to bottom, rgba(15, 15, 15, 0.98), #0a0a0a);
       padding: 100px 0;
@@ -594,6 +584,7 @@
       transition: all 0.3s;
       width: 100%;
       font-size: 1.05rem;
+      cursor: pointer;
     }
     
     .submit-btn:hover {
@@ -601,7 +592,24 @@
       box-shadow: 0 10px 20px rgba(240, 195, 109, 0.3);
     }
     
- 
+    .alert {
+      border-radius: 8px;
+      padding: 15px;
+      margin-top: 15px;
+    }
+    
+    .alert-success {
+      background-color: rgba(40, 167, 69, 0.1);
+      border: 1px solid rgba(40, 167, 69, 0.3);
+      color: #28a745;
+    }
+    
+    .alert-error {
+      background-color: rgba(220, 53, 69, 0.1);
+      border: 1px solid rgba(220, 53, 69, 0.3);
+      color: #dc3545;
+    }
+    
     footer {
       background: #000;
       color: #fff;
@@ -642,7 +650,6 @@
       font-size: 0.9rem;
     }
     
-   
     @media (max-width: 768px) {
       body {
         font-size: 15px;
@@ -798,7 +805,6 @@
       }
     }
     
-    
     @media (hover: none) and (pointer: coarse) {
       .service-card:hover,
       .project-card:hover,
@@ -815,7 +821,6 @@
       }
     }
     
-  
     input, select, textarea {
       font-size: 16px !important;
     }
@@ -824,7 +829,6 @@
 
 <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80">
 
-  
   <div class="loader-wrapper" id="loaderWrapper">
     <div class="load-text">
       <span>L</span><span>o</span><span>a</span><span>d</span><span>i</span><span>n</span><span>g</span>
@@ -833,7 +837,6 @@
       <span></span><span></span><span></span>
     </div>
   </div>
-
 
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark">
@@ -873,7 +876,6 @@
     </nav>
   </header>
 
- 
   <section id="about" class="container">
     <div class="profile-container">
       <div class="profile-frame">
@@ -888,7 +890,6 @@
       </div>
     </div>
   </section>
-
 
   <section id="services">
     <div class="container">
@@ -925,59 +926,59 @@
     </div>
   </section>
 
+  <section id="works" class="container">
+    <div class="section-header">
+      <h2>Mes Réalisations</h2>
+      <p>Découvrez une sélection de mes projets les plus significatifs</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="ecommerce.png" alt="Site E-commerce" class="project-img">
+          <h3>Site E-commerce</h3>
+          <p>Plateforme de vente en ligne avec système de paiement sécurisé, gestion des stocks et interface administrateur complète.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="port.png" alt="Portfolio" class="project-img">
+          <h3>Portfolio Professionnel</h3>
+          <p>Site portfolio moderne et responsive mettant en valeur les compétences et projets d'un développeur web.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="art life.png" alt="Art Life" class="project-img">
+          <h3>Art Life</h3>
+          <p>Galerie d'art numérique avec système de filtres avancés, recherche intelligente et présentation immersive des œuvres.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="gistione de stock.png" alt="Gestion de Stock" class="project-img">
+          <h3>Gestion de Stock</h3>
+          <p>Application web complète pour la gestion d'inventaire avec rapports automatiques et alertes de réapprovisionnement.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="UrbanKicks.png" alt="Système de Gestion" class="project-img">
+          <h3>UrbanKicks</h3>
+          <p>projet E-commerce Front-end : Maquette UI/UX moderne intégrant un système de filtrage dynamique et un Dark Mode complet, réalisé avec React.js</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="project-card">
+          <img src="hotele.png" alt="Réservation d'hôtel" class="project-img">
+          <h3>Réservation Hôtel</h3>
+          <p>Plateforme de réservation en temps réel avec gestion des disponibilités, paiement sécurisé et confirmation automatique.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="works" class="container">
-  <div class="section-header">
-    <h2>Mes Réalisations</h2>
-    <p>Découvrez une sélection de mes projets les plus significatifs</p>
-  </div>
-  
-  <div class="row">
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="ecommerce.png" alt="Site E-commerce" class="project-img">
-        <h3>Site E-commerce</h3>
-        <p>Plateforme de vente en ligne avec système de paiement sécurisé, gestion des stocks et interface administrateur complète.</p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="port.png" alt="Portfolio" class="project-img">
-        <h3>Portfolio Professionnel</h3>
-        <p>Site portfolio moderne et responsive mettant en valeur les compétences et projets d'un développeur web.</p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="art life.png" alt="Art Life" class="project-img">
-        <h3>Art Life</h3>
-        <p>Galerie d'art numérique avec système de filtres avancés, recherche intelligente et présentation immersive des œuvres.</p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="gistione de stock.png" alt="Gestion de Stock" class="project-img">
-        <h3>Gestion de Stock</h3>
-        <p>Application web complète pour la gestion d'inventaire avec rapports automatiques et alertes de réapprovisionnement.</p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="UrbanKicks.png" alt="Système de Gestion" class="project-img">
-        <h3>UrbanKicks</h3>
-        <p>projet E-commerce Front-end : Maquette UI/UX moderne intégrant un système de filtrage dynamique et un Dark Mode complet, réalisé avec React.js</p>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6 mb-4">
-      <div class="project-card">
-        <img src="hotele.png" alt="Réservation d'hôtel" class="project-img">
-        <h3>Réservation Hôtel</h3>
-        <p>Plateforme de réservation en temps réel avec gestion des disponibilités, paiement sécurisé et confirmation automatique.</p>
-      </div>
-    </div>
-  </div>
-</section>
-   <section id="skills" class="container">
+  <section id="skills" class="container">
     <div class="section-header">
       <h2>Mes Compétences</h2>
       <p>Un éventail de technologies et outils maîtrisés pour répondre à vos besoins</p>
@@ -1008,7 +1009,6 @@
     </div>
   </section>
 
- 
   <section id="cv" class="container">
     <div class="section-header">
       <h2>Mon CV</h2>
@@ -1022,7 +1022,6 @@
     </div>
   </section>
 
- 
   <section id="contact" class="container">
     <div class="section-header">
       <h2>Contactez-moi</h2>
@@ -1046,12 +1045,18 @@
         <div class="contact-info">
           <i class="ri-mail-line"></i>
           <h5>Email</h5>
-          <p>Salihhrouchane2@gmail.com</p>
+          <p>hrouchan.salih@gmail.com</p>
         </div>
       </div>
       
       <div class="col-lg-8">
-        <form class="contact-form" action="mailto:Salihhrouchane2@gmail.com" method="post" enctype="text/plain">
+       
+        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xdazraor" method="POST">
+         
+          <input type="hidden" name="_subject" value="Nouveau message depuis votre portfolio">
+          <input type="hidden" name="_replyto" id="email-reply">
+          <input type="hidden" name="_language" value="fr">
+          
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="name">Nom Complet *</label>
@@ -1065,7 +1070,7 @@
             
             <div class="col-12 mb-3">
               <label for="subject">Sujet *</label>
-              <input type="text" id="subject" name="subject" class="form-control" required>
+              <input type="text" id="subject" name="_subject" class="form-control" required>
             </div>
             
             <div class="col-12 mb-4">
@@ -1074,9 +1079,14 @@
             </div>
             
             <div class="col-12">
-              <button type="submit" class="submit-btn">
+              <button type="submit" class="submit-btn" id="submitBtn">
                 <i class="ri-send-plane-fill me-2"></i>Envoyer le message
               </button>
+            </div>
+            
+           
+            <div class="col-12 mt-3">
+              <div id="formMessage" class="alert d-none" role="alert"></div>
             </div>
           </div>
         </form>
@@ -1084,7 +1094,6 @@
     </div>
   </section>
 
- 
   <footer>
     <div class="container">
       <div class="social-links">
@@ -1107,12 +1116,9 @@
     </div>
   </footer>
 
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
- 
   <script>
-  
     window.addEventListener('load', () => {
       const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       const loadTime = isMobile ? 1200 : 2000;
@@ -1126,7 +1132,6 @@
       }, loadTime);
     });
     
-  
     document.addEventListener('DOMContentLoaded', function() {
       const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
       
@@ -1151,7 +1156,6 @@
       
       window.addEventListener('scroll', onScroll);
       
-     
       document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
         link.addEventListener('click', () => {
           const navbarCollapse = document.getElementById('navbarNav');
@@ -1162,13 +1166,11 @@
         });
       });
       
-    
       const scrollSpy = new bootstrap.ScrollSpy(document.body, {
         target: '#navbarNav',
         offset: 80
       });
       
-    
       const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -1182,32 +1184,140 @@
         });
       }, observerOptions);
       
-    
       document.querySelectorAll('.service-card, .project-card, .skill-card').forEach(card => {
         observer.observe(card);
       });
-    });
- 
-    document.querySelector('.contact-form')?.addEventListener('submit', function(e) {
-      const email = this.querySelector('#email').value;
-      const message = this.querySelector('#message').value;
       
-      if (!email || !message) {
-        e.preventDefault();
-        alert('Veuillez remplir tous les champs obligatoires.');
-        return false;
+      
+      const contactForm = document.getElementById('contactForm');
+      const formMessage = document.getElementById('formMessage');
+      const submitBtn = document.getElementById('submitBtn');
+      
+      if (contactForm) {
+        contactForm.addEventListener('submit', async function(e) {
+          e.preventDefault();
+          
+         
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value.trim();
+          const message = document.getElementById('message').value.trim();
+          
+          if (!name || !email || !subject || !message) {
+            showMessage('Veuillez remplir tous les champs obligatoires.', 'error');
+            return;
+          }
+          
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            showMessage('Veuillez entrer une adresse email valide.', 'error');
+            return;
+          }
+          
+         
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<i class="ri-loader-4-line me-2"></i>Envoi en cours...';
+          
+          try {
+           
+            const formData = new FormData(this);
+            const response = await fetch(this.action, {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            });
+            
+            if (response.ok) {
+              showMessage('Message envoyé avec succès! Je vous répondrai dans les plus brefs délais.', 'success');
+              contactForm.reset();
+            } else {
+              throw new Error('Erreur lors de l\'envoi du message');
+            }
+          } catch (error) {
+            console.error('Error:', error);
+            showMessage('Erreur lors de l\'envoi du message. Veuillez réessayer ou me contacter directement à Salihhrouchane2@gmail.com', 'error');
+          } finally {
+           
+            setTimeout(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = '<i class="ri-send-plane-fill me-2"></i>Envoyer le message';
+            }, 3000);
+          }
+        });
       }
       
+      function showMessage(text, type) {
+        formMessage.textContent = text;
+        formMessage.className = 'alert d-block';
+        
+        if (type === 'success') {
+          formMessage.classList.add('alert-success');
+          formMessage.classList.remove('alert-error');
+        } else {
+          formMessage.classList.add('alert-error');
+          formMessage.classList.remove('alert-success');
+        }
+        
+        
+        setTimeout(() => {
+          formMessage.classList.remove('d-block');
+          formMessage.classList.add('d-none');
+        }, 5000);
+      }
+      
+      
+      setupEmailFallback();
+    });
     
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        e.preventDefault();
-        alert('Veuillez entrer une adresse email valide.');
-        return false;
-      }
+
+    function setupEmailFallback() {
+      const formspreeLink = document.querySelector('#contactForm[action*="formspree"]');
+      if (!formspreeLink) return;
       
-      return true;
-    });
+  
+      if (formspreeLink.action.includes('YOUR_FORM_ID')) {
+        const contactForm = document.getElementById('contactForm');
+        contactForm.action = '#';
+        
+        contactForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          
+          const name = document.getElementById('name').value.trim();
+          const email = document.getElementById('email').value.trim();
+          const subject = document.getElementById('subject').value.trim();
+          const message = document.getElementById('message').value.trim();
+          const formMessage = document.getElementById('formMessage');
+          
+          if (!name || !email || !subject || !message) {
+            showMessage('Veuillez remplir tous les champs obligatoires.', 'error');
+            return;
+          }
+          
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(email)) {
+            showMessage('Veuillez entrer une adresse email valide.', 'error');
+            return;
+          }
+          
+       
+          const mailtoLink = `mailto:Salihhrouchane2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Nom: ${name}\nEmail: ${email}\n\nMessage:\n${message}`)}`;
+          
+        
+          window.location.href = mailtoLink;
+          
+       
+          formMessage.textContent = 'Redirection vers votre client email...';
+          formMessage.className = 'alert alert-success d-block';
+          
+          setTimeout(() => {
+            formMessage.classList.remove('d-block');
+            formMessage.classList.add('d-none');
+          }, 5000);
+        });
+      }
+    }
   </script>
 </body>
 </html>
